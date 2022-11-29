@@ -60,7 +60,7 @@
                         </div>
                         @endforeach
                         @enderror
-                        <form class="login100-form validate-form" action="/depanel/admin/proses" method="POST">
+                        <form class="login100-form validate-form" action="{{ route('ProsesLogin') }}" method="POST">
                             <span class="login100-form-title pb-5">
                                 Login
                             </span>

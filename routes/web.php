@@ -17,11 +17,12 @@ use Symfony\Component\Process\Process;
 */
 
 Route::get('/', [PageControl::class, 'landing_page']);
-Route::get('/depanel/instagram-feed', [PageControl::class, 'InstagramFeed'])->name('InstagramFeed');
-Route::get('/depanel/instagram-feed/karya', [PageControl::class, 'InstagramFeed_karya'])->name('InstagramFeed-karya');
+Route::get('/instagram-feed', [PageControl::class, 'InstagramFeed'])->name('InstagramFeed');
+Route::get('/instagram-feed/karya', [PageControl::class, 'InstagramFeed_karya'])->name('InstagramFeed-karya');
+
 
 // Routing Proses login
-Route::post('/depanel/admin/proses', [ProcessControl::class, 'login']);
+Route::post('/depanel/admin/proses', [ProcessControl::class, 'login'])->name('ProsesLogin');
 Route::get('/depanel/logout', [ProcessControl::class, 'logout'])->name('logout')->middleware('auth');
 // Routing Proses Portfolio
 Route::post('/depanel/portfolio/store', [ProcessControl::class, 'CreatePortfolio'])->name('CreatePortfolio')->middleware('auth');

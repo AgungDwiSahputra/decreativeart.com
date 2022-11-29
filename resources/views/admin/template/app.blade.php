@@ -68,15 +68,15 @@
                 href="javascript:void(0)"
               ></a>
               <!-- sidebar-toggle-->
-              <a class="logo-horizontal" href="index.html">
+              <a class="logo-horizontal" href="{{ route('AdminPortfolio') }}">
                 <img
                   src="{{asset('admin/images/brand/logo.png')}}"
-                  class="header-brand-img desktop-logo"
+                  class="header-brand-img desktop-logo w-20"
                   alt="logo"
                 />
                 <img
                   src="{{asset('img/logo.png')}}"
-                  class="header-brand-img light-logo1"
+                  class="header-brand-img light-logo1 w-20"
                   alt="logo"
                 />
               </a>

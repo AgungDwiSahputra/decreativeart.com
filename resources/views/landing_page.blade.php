@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="/"><img src="img/logo.png" alt="" width="150"></a>
+                        <a href="/"><img src="{{asset('img/logo.png')}}" alt="" width="150"></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -72,11 +72,11 @@
     <!-- Hero Section Begin -->
     <section class="hero" id="home">
         <div class="hero__slider owl-carousel">
-            <div class="set-bg" data-setbg="img/hero/hero-2.jpg">
+            <div class="set-bg" data-setbg="{{asset('img/hero/hero-2.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="img-hidden">
-                            <img src="img/hero/hero-img.png" alt="">
+                            <img src="{{asset('img/hero/hero-img.png')}}" alt="">
                         </div>
                         <div class="hero__item col-lg-6">
                             <div class="hero__text">
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="hero_img_item col-lg-6">
-                            <img src="img/hero/hero-img.png" alt="">
+                            <img src="{{asset('img/hero/hero-img.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -100,12 +100,12 @@
     <div class="logo spad bg-warning">
         <div class="container">
             <div class="logo__carousel owl-carousel">
-                <a href="#" class="logo__item"><img src="img/partner/logo111.png" alt=""></a>
-                <a href="#" class="logo__item"><img src="img/partner/logo222.png" alt=""></a>
-                <a href="#" class="logo__item"><img src="img/partner/logo333.png" alt=""></a>
-                <a href="#" class="logo__item"><img src="img/partner/logo444.png" alt=""></a>
-                <a href="#" class="logo__item"><img src="img/partner/logo555.png" alt=""></a>
-                <a href="#" class="logo__item"><img src="img/partner/logo666.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo111.png')}}" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo222.png')}}" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo333.png')}}" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo444.png')}}" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo555.png')}}" alt=""></a>
+                <a href="#" class="logo__item"><img src="{{asset('img/partner/logo666.png')}}" alt=""></a>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/website.png" alt="" width="45">
+                                    <img src="{{asset('img/icons/website.png')}}" alt="" width="45">
                                 </div>
                                 <h4>Website</h4>
                                 <p>Kami mengkhususkan diri dalam membuat situs web yang menarik untuk perusahaan B2C dan B2B. Tim kami terdiri dari para profesional dinamis yang percaya bahwa situs web Anda harus mewakili kualitas pekerjaan Anda dan mengembangkan bisnis Anda.</p>
@@ -139,7 +139,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/logo-design.png" alt="" width="45">
+                                    <img src="{{asset('img/icons/logo-design.png')}}" alt="" width="45">
                                 </div>
                                 <h4>Logo</h4>
                                 <p>Logo Anda adalah jantung dan wajah merek Anda. Kesan pertama itu penting! Desainer logo profesional kami akan membuat desain logo yang menarik yang akan membantu merek Anda menonjol dari pesaing.</p>
@@ -148,7 +148,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/animation.png" alt="" width="45">
+                                    <img src="{{asset('img/icons/animation.png')}}" alt="" width="45">
                                 </div>
                                 <h4>Animation</h4>
                                 <p>Menciptakan Animasi Logo adalah terobosan paling ampuh untuk meyakinkan client/konsumen agar lebih yakin dengan brand Anda dan membuat wujud brand/usaha Anda semakin profesional.</p>
@@ -157,7 +157,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/digital-marketing.png" alt="" width="45">
+                                    <img src="{{asset('img/icons/digital-marketing.png')}}" alt="" width="45">
                                 </div>
                                 <h4>Digital Marketing</h4>
                                 <p>Pentingnya jika perusahaan/usaha Anda lebih tertarget sesuai dengan produk yang Anda jual. Kami akan selalu membantu Anda dalam penargetan yang sangat akurat dengan algoritma SEO.</p>
@@ -171,7 +171,7 @@
     <!-- Services Section End -->
 
     <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg" id="team">
+    <section class="team spad set-bg" data-setbg="{{asset('img/team-bg.jpg')}}" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -185,7 +185,7 @@
                 <div class="latest__slider owl-carousel">
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/dehendrik.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/dehendrik.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">De Hendrik</h4>
                             <p>Founder</p>
                             <div class="team__item__social">
@@ -198,7 +198,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/anggi1.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/anggi1.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Anggi</h4>
                             <p>Design Feeds</p>
                             <div class="team__item__social">
@@ -211,7 +211,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/agung.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/agung.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Agung Dwi Sahputra</h4>
                             <p>Web Developer</p>
                             <div class="team__item__social">
@@ -224,7 +224,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/ryan.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/ryan.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Ryan Aditya</h4>
                             <p>UI UX Design</p>
                             <div class="team__item__social">
@@ -237,7 +237,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/afriandi.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/afriandi.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Muhammad Afriandi</h4>
                             <p>Video Animation</p>
                             <div class="team__item__social">
@@ -250,7 +250,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/valen.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/valen.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Valencia Salim</h4>
                             <p>Writing</p>
                             <div class="team__item__social">
@@ -263,7 +263,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/deka.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/deka.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Deka Kurnia</h4>
                             <p>Design NFT</p>
                             <div class="team__item__social">
@@ -276,7 +276,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 p-0 mx-auto">
                         <div class="de_card">
-                            <img src="img/team/anita.jpg" alt="" class="mx-auto d-block rounded-circle">
+                            <img src="{{asset('img/team/anita.jpg')}}" alt="" class="mx-auto d-block rounded-circle">
                             <h4 class="text-light">Anita Sari</h4>
                             <p>Video Editing</p>
                             <div class="team__item__social">
@@ -301,7 +301,7 @@
                     <a href="rekrut/">
                         <div class="de_card-link p-3">
                             <div class="card-body text-center">
-                                <img src="img/icons/recruitment.png" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
+                                <img src="{{asset('img/icons/recruitment.png')}}" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
                                 <h4 class="card-title text-light"><b>Rekrut Kami Sekarang Juga</b></h4>
                                 <p class="card-text text-light">Anda bisa merekrut kami menggunakan Situs Rekber (Rekening Bersama) yang menengahi transaksi kita agar lebih aman dan nyaman.</p>
                             </div>
@@ -312,7 +312,7 @@
                     <a href="">
                         <div class="de_card-link p-3">
                             <div class="card-body text-center">
-                                <img src="img/icons/nft.png" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
+                                <img src="{{asset('img/icons/nft.png')}}" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
                                 <h4 class="card-title text-light"><b>Koleksi Desain NFT</b><br><br></h4>
                                 <p class="card-text text-light">Berbagai koleksi Desain NFT yang Team kami buat menggunakan satu karakter dengan berbeda - beda outfits serta konsepnya.</p>
                             </div>
@@ -323,7 +323,7 @@
                     <a href="">
                         <div class="de_card-link p-3">
                             <div class="card-body text-center">
-                                <img src="img/icons/shop.png" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
+                                <img src="{{asset('img/icons/shop.png')}}" alt="" class="img-fluid w-50 d-block mx-auto pb-3">
                                 <h4 class="card-title text-light"><b>Toko Kami</b><br><br></h4>
                                 <p class="card-text text-light">Kami menjual beberapa produk desain seperti desain font, desain mockup, berbagai template keren, dll dengan berlisensi.</p>
                             </div>
@@ -343,7 +343,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/completed.png" alt="" width="90">
+                                <img src="{{asset('img/icons/completed.png')}}" alt="" width="90">
                                 <h2 class="counter_num">523</h2>
                                 <p>Compled Projects</p>
                             </div>
@@ -352,7 +352,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item second__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/costumer.png" alt="" width="90">
+                                <img src="{{asset('img/icons/costumer.png')}}" alt="" width="90">
                                 <h2 class="counter_num">505</h2>
                                 <p>Happy clients</p>
                             </div>
@@ -361,7 +361,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item third__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/customer-care.png" alt="" width="90">
+                                <img src="{{asset('img/icons/customer-care.png')}}" alt="" width="90">
                                 <h2 class="counter_num">490</h2>
                                 <p>Perspective clients</p>
                             </div>
@@ -370,7 +370,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item four__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/star-rating.png" alt="" width="90">
+                                <img src="{{asset('img/icons/star-rating.png')}}" alt="" width="90">
                                 <h2 class="counter_num">100%</h2>
                                 <p>Satisfied</p>
                             </div>
@@ -412,8 +412,8 @@
                 @if($data->link == null)
                 <div class="col-lg-4 col-md-6 col-sm-6 mix {{$data->kategori}} py-0">
                     <div class="portfolio__item">
-                        <a href="{{asset('storage/portfolio/'.$data->file)}}" class="portfolio__item__video set-bg">
-                            <img src="{{asset('storage/portfolio/'.$data->file)}}" alt="">
+                        <a href="{{url('storage/app/public/portfolio/'.$data->file)}}" class="portfolio__item__video set-bg">
+                            <img src="{{url('storage/app/public/portfolio/'.$data->file)}}" alt="">
                         </a>
                         <div class="portfolio__item__text">
                             <h4>{{$data->nama}}</h4>
@@ -427,7 +427,7 @@
                 @else
                 <div class="col-lg-4 col-md-6 col-sm-6 mix {{$data->kategori}} py-0">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="{{asset('storage/portfolio/'.$data->file)}}">
+                        <div class="portfolio__item__video set-bg" data-setbg="{{url('storage/app/public/portfolio/'.$data->file)}}">
                             <a href="{{$data->link}}" class="play-btn video-popup"><i class="fa fa-play"></i></a>
                         </div>
                         <div class="portfolio__item__text">
@@ -546,7 +546,7 @@
     <!-- Latest Blog Section End -->
 
     <!-- Testimonial Section Begin -->
-    <section class="testimonial spad set-bg" data-setbg="img/testimonial-bg.jpg" id="testi">
+    <section class="testimonial spad set-bg" data-setbg="{{asset('img/testimonial-bg.jpg')}}" id="testi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -565,7 +565,7 @@
                             </div>
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/arif.jpg" alt="">
+                                    <img src="{{asset('img/testimonial/arif.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Arif Santoso</h5>
@@ -581,7 +581,7 @@
                             </div>
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
+                                    <img src="{{asset('img/testimonial/ta-2.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Krista Attorn</h5>
@@ -598,7 +598,7 @@
                             </div>
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/fajar.jpg" alt="">
+                                    <img src="{{asset('img/testimonial/fajar.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Fajar Heri Setiawan</h5>
@@ -614,7 +614,7 @@
                             </div>
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
+                                    <img src="{{asset('img/testimonial/ta-2.jpg')}}" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Krista Attorn</h5>
@@ -636,7 +636,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt="" width="200"></a>
+                            <a href="#"><img src="{{asset('img/logo.png')}}" alt="" width="200"></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">

@@ -21,7 +21,7 @@
                         
                         @endforeach
                     @endif
-                    <form class="form-horizontal" method="POST" action="/depanel/portfolio/{{ $portfolio->id }}/update" enctype="multipart/form-data">
+                    <form class="form-horizontal" method="POST" action="{{ url('/depanel/portfolio/'.$portfolio->id.'/update') }}" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
                         <div class=" row mb-4">
@@ -60,7 +60,7 @@
                             <div class="col-md-9">
                                 <input type="file" name="file" class="form-control" id="file" placeholder="File Gambar">
                                 <span style="font-size: 0.7em;">Foto : {{ $portfolio->file }}</span><br>
-                                <img src="{{ asset('storage/portfolio/'.$portfolio->file) }}" alt="FOto sebelumnya" class="w-20 img-thumbnail">
+                                <img src="{{ url('storage/app/public/portfolio/'.$portfolio->file) }}" alt="Foto sebelumnya" class="w-20 img-thumbnail">
                             </div>
                         </div>
                         <div class=" row mb-4">

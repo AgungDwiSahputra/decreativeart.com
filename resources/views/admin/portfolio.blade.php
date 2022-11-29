@@ -28,18 +28,26 @@
                         <table class="table table-bordered text-nowrap border-bottom" id="responsive-datatable">
                             <thead>
                                 <tr>
+                                    <th class="wd-25p border-bottom-0">Aksi</th>
                                     <th class="wd-15p border-bottom-0">Nama</th>
                                     <th class="wd-15p border-bottom-0">Keterangan</th>
                                     <th class="wd-15p border-bottom-0">Jenis</th>
                                     <th class="wd-20p border-bottom-0">Kategori</th>
                                     <th class="wd-15p border-bottom-0">Gambar</th>
                                     <th class="wd-10p border-bottom-0">Link Video</th>
-                                    <th class="wd-25p border-bottom-0">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($portfolio as $data)
                                 <tr>
+                                    <td>
+                                        <a href="{{ url('/depanel/portfolio/'.$data->id.'/update') }}"><i class="fe fe-edit text-warning"></i></a> | 
+                                        <form action="{{ url('/depanel/portfolio/'.$data->id.'/destroy') }}" method="POST" id="delete" style="display: inline-block">
+                                            @csrf
+                                            @method('delete')
+                                            <a href="javascript:void(0)" onclick="document.getElementById('delete').submit()"><i class="fe fe-trash text-danger"></i></a>
+                                        </form>
+                                    </td>
                                     <td>{{ $data->nama }}</td>
                                     <td>{{ $data->keterangan }}</td>
                                     <td>{{ $data->jenis }}</td>
@@ -51,14 +59,6 @@
                                     @else
                                         {{ $data->link }}
                                     @endif    
-                                    </td>
-                                    <td>
-                                        <a href="/depanel/portfolio/{{ $data->id }}/update"><i class="fe fe-edit text-warning"></i></a> | 
-                                        <form action="/depanel/portfolio/{{ $data->id }}/destroy" method="POST" id="delete" style="display: inline-block">
-                                            @csrf
-                                            @method('delete')
-                                            <a href="javascript:void(0)" onclick="document.getElementById('delete').submit()"><i class="fe fe-trash text-danger"></i></a>
-                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
